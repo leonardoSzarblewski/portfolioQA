@@ -1,116 +1,116 @@
 main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+  text-align: center;
+  background-color: var(--gray-100);
+
+  #info {
     display: flex;
-    flex-direction: column;
-    margin-top: 12rem;
-    text-align: center;
-    background-color: var(--gray-100);
+    gap: 8rem;
+    justify-content: center;
+    margin-top: 5rem;
 
-    #info{
-        display: flex;
-        gap: 8rem;
-        justify-content: center;
-        margin-top: 5rem;
+    h4 {
+      padding: 1rem;
     }
+  }
 
-    .maincontainer{
-        margin-top: 5.5rem;
-
-    }
+  .maincontainer {
+    margin-top: 5.5rem;
+  }
 }
 
 .caixa {
-    border: solid 2px var(--gray-400);
-    border-radius: .5rem;
-    max-width: 40%;
-    padding: 1rem;
+  border: solid 2px var(--gray-400);
+  border-radius: 0.5rem;
+  max-width: 40%;
+  padding: 1rem;
 
-    .caixa2{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
+  .caixa2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
-#hability{
-    background-color: var(--gray-200);
+#hability {
+  background-color: var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  padding: 1rem;
+  .texthability {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    p {
+      margin-top: 2rem;
+    }
+  }
+
+  .iconscontain {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .contains {
+      gap: 1rem;
+    }
+  }
+
+  .icons {
+    width: 8rem;
+    background-color: transparent;
+    padding: 2rem;
+
+    box-shadow: 5px 10px 15px var(--gray-100);
+
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+  }
+
+  .icons:hover {
+    border: 2px solid var(--gray-300);
+    transition: 1s;
+  }
+
+  .containerhability {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #info {
     display: flex;
     flex-direction: column;
-    margin-top: 15rem;
-    margin-bottom: 10rem;
-    padding: 1rem;
-    .texthability{
+
+    .caixa {
+      margin: auto;
+      height: 18rem;
+
+      img {
+        margin-top: 1rem;
+      }
+
+      .caixa2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         margin-top: 5rem;
-        margin-bottom: 5rem;
-        p{
-            margin-top: 2rem;
-        }
+      }
     }
+  }
 
-    .iconscontain{
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
+  .iconscontain {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
 
-        .contains{
-            gap: 1rem;
-        }
+    .contains {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
     }
-
-    .icons{
-       
-        width: 8rem;
-        background-color: transparent;
-        padding: 2rem;
-
-        box-shadow: 5px 10px 15px var(--gray-100);
-
-
-        cursor: pointer;
-        border-radius: .5rem;
-        border: 2px solid transparent;
-    }
-
-    .icons:hover{
-        border: 2px solid var(--gray-300);
-        transition: 1s;
-    }
-
-    .containerhability{
-        margin-bottom: 10rem;
-    }
-}
-
-@media(max-width:600px){
-    #info{
-        display: flex;
-        flex-direction: column;
-
-        .caixa{
-            margin: auto;
-            height: 18rem;
-
-            img{
-                margin-top: 1rem;
-            }
-           
-
-            .caixa2 {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                margin-top: 5rem;
-            }
-        }
-    }
-  
-    .iconscontain{
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-
-        .contains{
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-    }
+  }
 }
